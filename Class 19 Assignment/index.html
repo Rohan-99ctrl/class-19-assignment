@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 19 Code</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+    <header>
+        <div class="container-fluid">
+            <div class="row overflow-hidden">
+                <div class="col-md-4" style="padding-right: 20px;padding-left: 20px;">
+                    <a href="#">
+                        <div class="logoWrapper">
+                            <img src="./img/logo2.png" alt="Logo">
+                            <span>ISLAMIC MESSAGE</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-3 logoWrapper">
+                    <div class="searchWrapper w-100">
+                        <input type="text" id="search" placeholder="Search" class="form-control">
+                    </div>
+                </div>
+
+                <div id="infoBlock" class="col-md-5 infoWrapper">
+                    <a id="addNew" href="#myModal" data-bs-toggle="modal" data-bs-target="#myModal">Add New</a>
+
+                    <ul class="iconListWrapper">
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fas fa-th"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    </ul>
+
+                    <a href="#">
+                        <div class="profileWrapper">
+                            <img src="./img/profile.jpg" alt="">
+                            <span>Rohan</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ---------- bootstrap modal ---------- -->
+
+
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Add Developers Data</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" id="devsAddForm">
+                        <input id="nam" type="text" class="form-control mb-3" placeholder="Developer's Name">
+                        <input id="age" type="text" class="form-control mb-3" placeholder="Developer's Age">
+                        <input id="numb" type="number" class="form-control mb-3" placeholder="Developer's Number">
+                        <input id="mail" type="text" class="form-control mb-3" placeholder="Developer's Email">
+                        <input id="location" type="text" class="form-control mb-3" placeholder="Developer's Location">
+                        <select class="form-control mb-3" id="skillList">
+                            <option value="">-- Select --</option>
+                        </select>
+                        <input id="salary" type="text" class="form-control mb-3" placeholder="Developer's Salary">
+                        <input id="photo" type="text" class="form-control mb-3" placeholder="Developer's Photo">
+
+                        <input type="submit" value="Submit" class="btn btn-outline-success w-100">
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------- -->
+
+
+    <div class="modal fade" id="myModalView">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Developers Data</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    
+
+
+                    <div class="text-end">
+                        <button style="margin-right: 13px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------- -->
+
+
+    <div class="modal fade" id="myModalEdit">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Developers Data Edit</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    
+
+
+
+                    <div class="text-end">
+                        <button style="margin-right: 13px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------- -->
+
+
+    <div class="modal fade" id="myModalDelete">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Developers Data Delete</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    
+                </div>
+
+                <div class="modal-footer">
+                    <button style="margin-right: 20px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------- bootstrap modal ---------- -->
+
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+
+            <div class="sideBarWrapper">
+
+                <div class="slideProfile">
+                    <div>
+                        <img src="./img/profile.jpg" alt="">
+                    </div>
+    
+                    <div>
+                        <span>Rohan Mostofa</span>
+                        <span>Workspace Admin!</span>
+                    </div>
+                </div>
+    
+                <ul class="dashboardMenu">
+                    <li><a class="adminBtn active" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+    
+                    <li><a class="adminBtn" href="#"><i class="fas fa-laptop-code"></i> Developers</a></li>
+                    
+                    <li><a class="adminBtn" href="#"><i class="fas fa-blog"></i> Posts</a></li>
+    
+                    <li><a class="adminBtn" href="#"><i class="fas fa-calendar-alt"></i> Status</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col mt-4">
+                <div class="welcomeMsg">
+                    <h1>Welcome to admin panel!</h1>
+                    <h5 style="color: rgb(199, 199, 199);">Hello admin!</h5>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <div class="tableInfoWrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Developer's Name</th>
+                                        <th>Number</th>
+                                        <th>Salary</th>
+                                        <th>Photo</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Rohan Mostofa</td>
+                                        <td>01715-486584</td>
+                                        <td>$2000</td>
+                                        <td><img src="./img/profile.jpg" alt=""></td>
+                                        <td> 
+                                            <a data-bs-toggle="modal" href="#myModalView">
+                                                <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i></button>
+                                            </a> 
+                                            <a data-bs-toggle="modal" href="#myModalEdit">
+                                                <button class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></button>
+                                            </a> 
+                                            <a data-bs-toggle="modal" href="#myModalDelete">
+                                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                            </a> 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "devs-api",
+  "version": "1.0.0",
+  "description": "This is an api for devs data.",
+  "main": "index.js",
+  "scripts": {
+    "mostofa": "json-server --watch db.json --port 2020"
+  },
+  "author": "Rohan Mostofa",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

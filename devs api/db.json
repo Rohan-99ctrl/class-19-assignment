@@ -1,0 +1,48 @@
+{
+  "devs": [
+    {
+      "id": 1,
+      "nam": "Rakib Hasan Reyal",
+      "age": "20",
+      "salary": "2000",
+      "mail": "mostofa@gmail.com",
+      "skillId": "Laravel Developer",
+      "location": "Narail, Dhaka, Bangladesh",
+      "numb": "01745854585",
+      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/271637241_1156272145176377_2904994142209604188_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeE_2QigLXRPye4GRNBU4gYIF0VVPNwd2P8XRVU83B3Y_1pvKVCEOaBHVHT4K518JgqOZMIbMW5Jyca38Wdgfj-c&_nc_ohc=rgxBn-ygF5IAX_Bueu8&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT9UQft8e5fLPOmkV80XquA6rqvu59pEaBiRAtDPYKFr0A&oe=620F3B1E"
+    },
+    {
+      "id": 2,
+      "nam": "Sheikh Muhammad Abdullah",
+      "age": "21",
+      "salary": "2000",
+      "mail": "koutye@gmail.com",
+      "skillId": "PHP Developer",
+      "location": "Narail, Dhaka, Bangladesh",
+      "numb": "01745854585",
+      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/269694975_276761611139011_6956051851181766295_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGfsfGFUeRip7WtRAMQ9U7ZF46D_b0v6RMXjoP9vS_pExVeFC0d-UkpFHxKA76cwnkeW-H79E059ktooDlTIpzw&_nc_ohc=FCYYyqbhTD8AX_Zigvi&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT-YWLllXUThu3lSpAkTKKahjOxPx5x5eVGtjyZ3mPuVIg&oe=620E8D0C"
+    },
+    {
+      "id": 3,
+      "nam": "Zonayed Ahamad",
+      "age": "23",
+      "salary": "2000",
+      "mail": "agsadsd@gmail.com",
+      "skillId": "MERN Developer",
+      "location": "Narail, Dhaka, Bangladesh",
+      "numb": "01745854585",
+      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/271709276_700456181364022_5440642696709932769_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpsshkv0hzOE0aTfo6pSwcooGhKPeopyaigaEo96inJieDlGdKtGJHSw1gwZ4gscFWPJiNS0SJqjkdO4yVbrv2&_nc_ohc=BW8HhyCmwWMAX89aHtB&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT9Tbfx04va-1fPW-0t2EItgG7N_UxePkOYzagK4fJLk2w&oe=620EE78A"
+    },
+    {
+      "id": 4,
+      "nam": "Rohan Mostofa Abir",
+      "age": "20",
+      "salary": "2000",
+      "mail": "rety@gmail.com",
+      "skillId": "Python Developer",
+      "location": "Narail, Dhaka, Bangladesh",
+      "numb": "01745854585",
+      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/269598096_592726115354310_6389621578989359445_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG45lpPBKiDI7_MBrrd1Yra9r9ISbosX5r2v0hJuixfmikyX6PfJp2HkrTnRGg89TyL-_FxQ7J6sl-qIXLLdNJf&_nc_ohc=oV10O1S7cNwAX-2ZvbR&tn=MVxjhKoW6tct87r2&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT_y-MFUQjHLwbwA8O_Vpmd0xI0FIo1tS6o7Rw6naBvAzQ&oe=621012CF"
+    }
+  ]
+}
