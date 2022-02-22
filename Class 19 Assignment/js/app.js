@@ -75,6 +75,15 @@ devsAddForm.addEventListener('submit', function(event){
             photo : photo.value
         });
 
+        nam.value = '';
+        age.value = '';
+        salary.value = '';
+        mail.value = '';
+        skillList.value = '';
+        location.value = '';
+        numb.value = '';
+        photo.value = '';
+
     }
 
 })
