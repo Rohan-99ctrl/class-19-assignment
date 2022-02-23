@@ -79,7 +79,7 @@
                         <select class="form-control mb-3" id="skillList">
                             <option value="">-- Select --</option>
                         </select>
-                        <input id="salary" type="text" class="form-control mb-3" placeholder="Developer's Salary">
+                        <input id="salary" type="number" class="form-control mb-3" placeholder="Developer's Salary">
                         <input id="photo" type="text" class="form-control mb-3" placeholder="Developer's Photo">
 
                         <input type="submit" value="Submit" class="btn btn-success w-100">
@@ -105,9 +105,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body" id="uploadDevsDataDetails">
                     
-
+                    
 
                     <div class="text-end">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
@@ -183,26 +183,29 @@
 
             <div class="sideBarWrapper">
 
-                <div class="slideProfile">
-                    <div>
-                        <img src="./img/profile.jpg" alt="">
+                <div class="fixedWrapper">
+                    <div class="slideProfile">
+                        <div>
+                            <img src="./img/profile.jpg" alt="">
+                        </div>
+        
+                        <div>
+                            <span>Rohan Mostofa</span>
+                            <span>Workspace Admin!</span>
+                        </div>
                     </div>
-    
-                    <div>
-                        <span>Rohan Mostofa</span>
-                        <span>Workspace Admin!</span>
-                    </div>
+        
+                    <ul class="dashboardMenu">
+                        <li><a class="adminBtn active" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        
+                        <li><a class="adminBtn" href="#"><i class="fas fa-laptop-code"></i> Developers</a></li>
+                        
+                        <li><a class="adminBtn" href="#"><i class="fas fa-blog"></i> Posts</a></li>
+        
+                        <li><a class="adminBtn" href="#"><i class="fas fa-calendar-alt"></i> Status</a></li>
+                    </ul>
                 </div>
-    
-                <ul class="dashboardMenu">
-                    <li><a class="adminBtn active" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-    
-                    <li><a class="adminBtn" href="#"><i class="fas fa-laptop-code"></i> Developers</a></li>
-                    
-                    <li><a class="adminBtn" href="#"><i class="fas fa-blog"></i> Posts</a></li>
-    
-                    <li><a class="adminBtn" href="#"><i class="fas fa-calendar-alt"></i> Status</a></li>
-                </ul>
+                
             </div>
 
 
@@ -215,6 +218,7 @@
                 <div class="row">
                     <div class="col-md-12 mt-4">
                         <div class="tableInfoWrapper">
+                            <h3 style="font-weight: 700;color: white;" class="mb-4 mt-2">Developer's Data</h3>
                             <table>
                                 <thead>
                                     <tr>

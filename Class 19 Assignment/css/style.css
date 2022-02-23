@@ -147,9 +147,22 @@ div.profileWrapper span{
 
 div.sideBarWrapper{
     width: 250px;
+    position: relative;
+}
+
+div.detailContent{
+    padding: 20px 0px;
+}
+
+div.fixedWrapper{
+    width: 250px;
     background-color: #1d212c;
     height: 88vh;
     padding: 0px 0px;
+    position: fixed;
+    left: 0px;
+    top: 76px;
+    bottom: 0px;
 }
 
 div.slideProfile{
