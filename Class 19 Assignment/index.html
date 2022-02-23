@@ -36,7 +36,7 @@
                 </div>
 
                 <div id="infoBlock" class="col-md-5 infoWrapper">
-                    <a id="addNew" href="#myModal" data-bs-toggle="modal" data-bs-target="#myModal">Add New</a>
+                    <a id="addNew" href="#myModal" data-bs-toggle="modal" data-bs-target="#myModal">Add Developer</a>
 
                     <ul class="iconListWrapper">
                         <li><a href="#"><i class="fas fa-home"></i></a></li>
@@ -82,7 +82,7 @@
                         <input id="salary" type="text" class="form-control mb-3" placeholder="Developer's Salary">
                         <input id="photo" type="text" class="form-control mb-3" placeholder="Developer's Photo">
 
-                        <input type="submit" value="Submit" class="btn btn-outline-success w-100">
+                        <input type="submit" value="Submit" class="btn btn-success w-100">
                     </form>
                 </div>
 
@@ -227,25 +227,8 @@
                                     </tr>
                                 </thead>
     
-                                <tbody>
-                                    <tr>
-                                        <td>01</td>
-                                        <td>Rohan Mostofa</td>
-                                        <td>01715-486584</td>
-                                        <td>$2000</td>
-                                        <td><img src="./img/profile.jpg" alt=""></td>
-                                        <td> 
-                                            <a data-bs-toggle="modal" href="#myModalView">
-                                                <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i></button>
-                                            </a> 
-                                            <a data-bs-toggle="modal" href="#myModalEdit">
-                                                <button class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></button>
-                                            </a> 
-                                            <a data-bs-toggle="modal" href="#myModalDelete">
-                                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                                            </a> 
-                                        </td>
-                                    </tr>
+                                <tbody id="uploadDevsData">
+                                    
                                 </tbody>
                             </table>
                         </div>

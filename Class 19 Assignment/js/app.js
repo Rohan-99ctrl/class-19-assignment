@@ -24,12 +24,12 @@ const skillList = document.querySelector('#skillList')
 
 let apiLoad = () => {
 
-    axios.get('http://localhost:2020/devs').then((skill) => {
+    axios.get('http://localhost:2020/devsSkills').then((skill) => {
         
         let skillApiList = '';
 
         skill.data.map((skillData) => {
-            skillApiList += `<option value="${skillData.skillId}">${skillData.skillId}</option>`;
+            skillApiList += `<option value="${skillData.skill}">${skillData.skill}</option>`;
         });
 
         skillList.insertAdjacentHTML('beforeend', skillApiList);
@@ -39,6 +39,49 @@ let apiLoad = () => {
 }
 
 apiLoad();
+
+
+const uploadDevsData = document.querySelector('#uploadDevsData')
+
+const getDevelopers = () => {
+
+    axios.get('http://localhost:2020/devs').then((response) => {
+
+        let devsData = '';
+
+        response.data.map((devsDataItem) => {
+
+            devsData += `
+                <tr>
+                    <td>${devsDataItem.id}</td>
+                    <td>${devsDataItem.nam}</td>
+                    <td>${devsDataItem.numb}</td>
+                    <td>${devsDataItem.salary}</td>
+                    <td><img src="${devsDataItem.photo}" alt=""></td>
+                    <td> 
+                        <a data-bs-toggle="modal" href="#myModalView">
+                            <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i></button>
+                        </a> 
+                        <a data-bs-toggle="modal" href="#myModalEdit">
+                            <button class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></button>
+                        </a> 
+                        <a data-bs-toggle="modal" href="#myModalDelete">
+                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                        </a> 
+                    </td>
+                </tr>
+            `;
+
+        });
+
+        uploadDevsData.innerHTML = devsData;
+
+    })
+
+}
+
+getDevelopers();
+
 
 
 const devsAddForm = document.querySelector('#devsAddForm');
@@ -73,22 +116,26 @@ devsAddForm.addEventListener('submit', function(event){
             location : location.value,
             numb : numb.value,
             photo : photo.value
+        }).then((res) => {
+
+            getDevelopers();
+
+            nam.value = '';
+            age.value = '';
+            salary.value = '';
+            mail.value = '';
+            skillList.value = '';
+            location.value = '';
+            numb.value = '';
+            photo.value = '';
+
         });
 
-        nam.value = '';
-        age.value = '';
-        salary.value = '';
-        mail.value = '';
-        skillList.value = '';
-        location.value = '';
-        numb.value = '';
-        photo.value = '';
+        
 
     }
 
 })
-
-
 
 
 
