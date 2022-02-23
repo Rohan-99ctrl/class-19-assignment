@@ -253,5 +253,23 @@ devsDataEdit.addEventListener('submit', function(event){
 });
 
 
+// delete data from json server
+
+const deleteDevs = document.querySelector('#deleteDevs');
+
+function deleteDeveloper(id){
+    deleteDevs.setAttribute('deleteId', id);
+}
+
+deleteDevs.addEventListener('click', function(){
+
+    let deleteId = this.getAttribute('deleteId')
+    axios.delete(`http://localhost:2020/devs/${deleteId}`).then((delData) => {
+
+        getDevelopers();
+
+    })
+
+})
 
 

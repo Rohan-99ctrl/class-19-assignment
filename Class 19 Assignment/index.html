@@ -18,7 +18,7 @@
 
 
     <header>
-        <div class="container-fluid">
+        <div id="headerWrapper" class="container-fluid">
             <div class="row overflow-hidden">
                 <div class="col-md-4" style="padding-right: 20px;padding-left: 20px;">
                     <a href="#">
@@ -82,13 +82,10 @@
                         <input id="salary" type="number" class="form-control mb-3" placeholder="Developer's Salary">
                         <input id="photo" type="text" class="form-control mb-3" placeholder="Developer's Photo">
 
-                        <input type="submit" value="ADD" class="btn btn-success w-100">
+                        <input data-bs-dismiss="modal" type="submit" value="ADD" class="btn btn-success mb-3 w-100">
                     </form>
                 </div>
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
             </div>
         </div>
     </div>
@@ -152,15 +149,11 @@
 
                         <input id="photoEdit" type="text" class="form-control mb-3" placeholder="Developer's Photo">
 
-                        <input id="apiId" type="text" class="form-control mb-3" placeholder="Developer's Photo" readonly>
+                        <input id="apiId" type="hidden" class="form-control mb-3" placeholder="Developer's Photo" readonly>
 
-                        <input type="submit" value="Submit" class="btn btn-success w-100 mb-3">
+                        <input data-bs-dismiss="modal" type="submit" value="Submit" class="btn btn-success w-100 mb-3">
                     </form>
 
-
-                    <div class="text-end">
-                        <button style="margin-right: 13px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
                 </div>
 
             </div>
@@ -181,11 +174,11 @@
 
                 <div class="modal-body">
                     
-
+                    <h5 class="mb-4">Are you sure to delete this developer data?</h5>
 
                     <div class="text-end">
-                        <button style="margin-right: 13px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                        <button style="margin-right: 13px;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+                        <button id="deleteDevs" type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
                     </div>
                 </div>
                 

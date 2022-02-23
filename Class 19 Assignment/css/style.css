@@ -15,7 +15,16 @@ header{
     padding: 12px 0px;
     background-color: #1d212c;
     border-bottom: 2px solid orangered;
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;
 }
+
+/* div#headerWrapper{
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;
+} */
 
 div.logoWrapper{
     color: gray;
@@ -157,7 +166,7 @@ div.detailContent{
 div.fixedWrapper{
     width: 250px;
     background-color: #1d212c;
-    height: 88vh;
+    height: 100vh;
     padding: 0px 0px;
     position: fixed;
     left: 0px;
@@ -251,6 +260,7 @@ div.welcomeMsg{
     background-color: #1d212c;
     margin: auto;
     color: white;
+    margin-top: 5rem;
 }
 
 
@@ -264,6 +274,7 @@ div.tableInfoWrapper{
     background-color: #1d212c;
     padding: 25px 35px;
     margin: auto;
+    margin-bottom: 1.6rem;
 }
 
 table{
