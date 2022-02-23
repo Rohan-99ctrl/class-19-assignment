@@ -1,36 +1,34 @@
 {
-
   "devsSkills": [
     {
-      "id" : 1,
-      "skill" : "MERN Developer"
+      "id": 1,
+      "skill": "MERN Developer"
     },
     {
-      "id" : 2,
-      "skill" : "PHP Developer"
+      "id": 2,
+      "skill": "PHP Developer"
     },
     {
-      "id" : 3,
-      "skill" : "Laravel Developer"
+      "id": 3,
+      "skill": "Laravel Developer"
     },
     {
-      "id" : 4,
-      "skill" : "React Developer"
+      "id": 4,
+      "skill": "React Developer"
     },
     {
-      "id" : 5,
-      "skill" : "Python Developer"
+      "id": 5,
+      "skill": "Python Developer"
     },
     {
-      "id" : 6,
-      "skill" : "Django Developer"
+      "id": 6,
+      "skill": "Django Developer"
     },
     {
-      "id" : 7,
-      "skill" : "WordPress Developer"
+      "id": 7,
+      "skill": "WordPress Developer"
     }
   ],
-
   "devs": [
     {
       "id": 1,
@@ -56,14 +54,14 @@
     },
     {
       "id": 3,
-      "nam": "Zonayed Ahamad",
-      "age": "23",
+      "nam": "Rohan Mostofa Abir",
+      "age": "21",
       "salary": "2000",
-      "mail": "agsadsd@gmail.com",
+      "mail": "rohanmostofa9900@gmail.com",
       "skillId": "MERN Developer",
       "location": "Narail, Dhaka, Bangladesh",
-      "numb": "01745854585",
-      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/271709276_700456181364022_5440642696709932769_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEpsshkv0hzOE0aTfo6pSwcooGhKPeopyaigaEo96inJieDlGdKtGJHSw1gwZ4gscFWPJiNS0SJqjkdO4yVbrv2&_nc_ohc=Xm61BzwGlCcAX_Gl3S7&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT-PKSTFWN1N1nEDFn1i4kZqX5CXLrj7zFcF_pnG_OaQng&oe=621AC50A"
+      "numb": "01731587464",
+      "photo": "https://scontent.fjsr6-1.fna.fbcdn.net/v/t39.30808-6/269598096_592726115354310_6389621578989359445_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG45lpPBKiDI7_MBrrd1Yra9r9ISbosX5r2v0hJuixfmikyX6PfJp2HkrTnRGg89TyL-_FxQ7J6sl-qIXLLdNJf&_nc_ohc=M7v6R-OwHCQAX-Yul_F&tn=MVxjhKoW6tct87r2&_nc_ht=scontent.fjsr6-1.fna&oh=00_AT-Jb0u9ofgvOoO-Dwy1ve6ssUq4EK5mACG3kt970eBOLQ&oe=621BF04F"
     }
   ]
 }

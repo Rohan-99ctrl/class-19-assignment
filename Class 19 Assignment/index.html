@@ -82,7 +82,7 @@
                         <input id="salary" type="number" class="form-control mb-3" placeholder="Developer's Salary">
                         <input id="photo" type="text" class="form-control mb-3" placeholder="Developer's Photo">
 
-                        <input type="submit" value="Submit" class="btn btn-success w-100">
+                        <input type="submit" value="ADD" class="btn btn-success w-100">
                     </form>
                 </div>
 
@@ -130,14 +130,36 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body" id="devsDataEdit">
                     
+                    <form action="#" id="devsEditForm">
+                        <input id="namEdit" type="text" class="form-control mb-3" placeholder="Developer's Name">
+                        <input id="ageEdit" type="text" class="form-control mb-3" placeholder="Developer's Age">
+                        <input id="numbEdit" type="number" class="form-control mb-3" placeholder="Developer's Number">
+                        <input id="mailEdit" type="text" class="form-control mb-3" placeholder="Developer's Email">
+                        <input id="locationEdit" type="text" class="form-control mb-3" placeholder="Developer's Location">
+                        <!-- <select class="form-control mb-3" id="skillListEdit">
+                            <option value="">-- Select --</option>
+                        </select> -->
 
+                        <input id="skillListEdit" type="text" class="form-control mb-3" placeholder="Developer's Skill">
+                        <input id="salaryEdit" type="number" class="form-control mb-3" placeholder="Developer's Salary">
+
+                        <div class="mb-3">
+                            <span>Preview Photo :</span>
+                            <img id="imgPreview" style="padding: 3px; background-color: rgb(41, 41, 41);width: 50px;height: 50px;object-fit: cover;margin-left: 20px;" src="./img/profile.jpg" alt="">
+                        </div>
+
+                        <input id="photoEdit" type="text" class="form-control mb-3" placeholder="Developer's Photo">
+
+                        <input id="apiId" type="text" class="form-control mb-3" placeholder="Developer's Photo" readonly>
+
+                        <input type="submit" value="Submit" class="btn btn-success w-100 mb-3">
+                    </form>
 
 
                     <div class="text-end">
                         <button style="margin-right: 13px;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
                     </div>
                 </div>
 

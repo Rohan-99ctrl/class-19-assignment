@@ -21,6 +21,7 @@ adminBtn.forEach((items) => {
 
 
 const skillList = document.querySelector('#skillList')
+// const skillListEdit = document.querySelector('#skillListEdit')
 
 let apiLoad = () => {
 
@@ -33,6 +34,7 @@ let apiLoad = () => {
         });
 
         skillList.insertAdjacentHTML('beforeend', skillApiList);
+        // skillListEdit.insertAdjacentHTML('beforeend', skillApiList);
 
     })
 
@@ -62,10 +64,10 @@ const getDevelopers = () => {
                         <a id="view" onclick="viewDeveloperDetails(${devsDataItem.id})" data-bs-toggle="modal" href="#myModalView">
                             <button class="btn btn-info btn-sm"><i class="fas fa-eye"></i></button>
                         </a> 
-                        <a id="edit" onclick="viewDeveloperedit(${devsDataItem.id})" data-bs-toggle="modal" href="#myModalEdit">
+                        <a id="edit" onclick="editDeveloper(${devsDataItem.id})" data-bs-toggle="modal" href="#myModalEdit">
                             <button class="btn btn-warning btn-sm"><i class="fas fa-user-edit"></i></button>
                         </a> 
-                        <a id="delete" onclick="viewDeveloperDelete(${devsDataItem.id})" data-bs-toggle="modal" href="#myModalDelete">
+                        <a id="delete" onclick="deleteDeveloper(${devsDataItem.id})" data-bs-toggle="modal" href="#myModalDelete">
                             <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                         </a> 
                     </td>
@@ -114,12 +116,6 @@ function viewDeveloperDetails(id){
 
     })
 }
-
-
-// edit data 
-
-
-
 
 
 
@@ -174,6 +170,87 @@ devsAddForm.addEventListener('submit', function(event){
 })
 
 
+
+
+// edit data 
+
+const devsEditForm = document.querySelector('#devsEditForm');
+
+function editDeveloper(id){
+
+    let namEdit = document.querySelector('#namEdit');
+    let ageEdit = document.querySelector('#ageEdit');
+    let numbEdit = document.querySelector('#numbEdit');
+    let mailEdit = document.querySelector('#mailEdit');
+    let locationEdit = document.querySelector('#locationEdit');
+    let skillListEdit = document.querySelector('#skillListEdit');
+    let salaryEdit = document.querySelector('#salaryEdit');
+    let imgPreview = document.querySelector('#imgPreview');
+    let photoEdit = document.querySelector('#photoEdit');
+    let apiId = document.querySelector('#apiId')
+ 
+    axios.get(`http://localhost:2020/devs/${id}`).then((editItem) => {
+
+        namEdit.value = editItem.data.nam;
+        ageEdit.value = editItem.data.age;
+        numbEdit.value = editItem.data.numb;
+        mailEdit.value = editItem.data.mail;
+        locationEdit.value = editItem.data.location;
+        skillListEdit.value = editItem.data.skillId;
+        salaryEdit.value = editItem.data.salary;
+        imgPreview.setAttribute('src', editItem.data.photo);
+        photoEdit.value = editItem.data.photo;
+        apiId.value = editItem.data.id;
+
+    });
+
+}
+
+
+const devsDataEdit = document.querySelector('#devsDataEdit');
+
+devsDataEdit.addEventListener('submit', function(event){
+
+    event.preventDefault();
+
+    let namEdit = devsDataEdit.querySelector('#namEdit');
+    let ageEdit = devsDataEdit.querySelector('#ageEdit');
+    let numbEdit = devsDataEdit.querySelector('#numbEdit');
+    let mailEdit = devsDataEdit.querySelector('#mailEdit');
+    let locationEdit = devsDataEdit.querySelector('#locationEdit');
+    let skillListEdit = devsDataEdit.querySelector('#skillListEdit');
+    let salaryEdit = devsDataEdit.querySelector('#salaryEdit');
+    let imgPreview = devsDataEdit.querySelector('#imgPreview');
+    let photoEdit = devsDataEdit.querySelector('#photoEdit');
+    let apiId = devsDataEdit.querySelector('#apiId')
+    
+    axios.patch(`http://localhost:2020/devs/${apiId.value}`, {
+        id : "",
+        nam : namEdit.value,
+        age : ageEdit.value,
+        salary : salaryEdit.value,
+        mail : mailEdit.value,
+        skillId : skillListEdit.value,
+        location : locationEdit.value,
+        numb : numbEdit.value,
+        photo : photoEdit.value
+    }).then((patchVal) => {
+
+        namEdit.value = '';
+        ageEdit.value = '';
+        salaryEdit.value = '';
+        mailEdit.value = '';
+        skillListEdit.value = '';
+        locationEdit.value = '';
+        imgPreview.setAttribute('src', patchVal.data.photo);
+        numbEdit.value = '';
+        photoEdit.value = '';
+
+        getDevelopers();
+
+    })
+
+});
 
 
 
