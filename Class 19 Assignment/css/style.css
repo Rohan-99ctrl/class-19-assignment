@@ -27,7 +27,7 @@ header{
 } */
 
 div.logoWrapper{
-    color: gray;
+    color: white;
     display: flex;
     align-items: center;
 }
@@ -102,7 +102,7 @@ ul.iconListWrapper li a{
 }
 
 ul.iconListWrapper li a i{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 div.profileWrapper{
@@ -117,6 +117,7 @@ div.profileWrapper{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 button i{

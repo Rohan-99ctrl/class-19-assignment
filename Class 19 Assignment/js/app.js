@@ -51,11 +51,11 @@ const getDevelopers = () => {
 
         let devsData = '';
 
-        response.data.map((devsDataItem) => {
+        response.data.map((devsDataItem, index) => {
 
             devsData += `
                 <tr>
-                    <td>${devsDataItem.id}</td>
+                    <td>${index + 1}</td>
                     <td>${devsDataItem.nam}</td>
                     <td>${devsDataItem.numb}</td>
                     <td>$${devsDataItem.salary}</td>
@@ -103,7 +103,7 @@ function viewDeveloperDetails(id){
 
                     <div class="col-md-7 detailContent">
                         <h4><span style="color: blueviolet;">Name :</span> ${response.data.nam}</h4>
-                        <h4><span style="color: blueviolet;">Age :</span> ${response.data.age}</h4>
+                        <h4><span style="color: blueviolet;">Age :</span> ${response.data.age} Years</h4>
                         <h4><span style="color: blueviolet;">Location :</span> ${response.data.location}</h4>
                         <h4><span style="color: blueviolet;">Contact No. :</span> ${response.data.numb}</h4>
                         <h4><span style="color: blueviolet;">E-mail :</span> ${response.data.mail}</h4>
